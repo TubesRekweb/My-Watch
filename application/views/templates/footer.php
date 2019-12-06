@@ -4,14 +4,14 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-8 col-sm-12">
 					<div class="footer-widget about-widget">
-						<img src="img/logo.png" class="footer-logo" alt="">
+						<img src="<?=base_url(); ?>assets/img/logo.png" class="footer-logo" alt="">
 						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
 						<div class="cards">
-							<img src="img/cards/5.png" alt="">
-							<img src="img/cards/4.png" alt="">
-							<img src="img/cards/3.png" alt="">
-							<img src="img/cards/2.png" alt="">
-							<img src="img/cards/1.png" alt="">
+							<img src="<?=base_url(); ?>assets/img/cards/5.png" alt="">
+							<img src="<?=base_url(); ?>assets/img/cards/4.png" alt="">
+							<img src="<?=base_url(); ?>assets/img/cards/3.png" alt="">
+							<img src="<?=base_url(); ?>assets/img/cards/2.png" alt="">
+							<img src="<?=base_url(); ?>assets/img/cards/1.png" alt="">
 						</div>
 					</div>
 				</div>

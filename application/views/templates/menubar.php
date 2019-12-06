@@ -21,10 +21,9 @@
 			<!-- site menu -->
 			<ul class="main-menu">
 				<li><a href="<?= base_url('home/index');  ?>">Home</a></li>
-				<li><a href="#">Woman</a></li>
-				<li><a href="#">Man</a></li>
-				<li><a href="#">Couple</a></li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="<?= base_url('woman/index');  ?>">Woman</a></li>
+				<li><a href="<?= base_url('man/index');  ?>">Man</a></li>
+				<li><a href="<?= base_url('couple/index');  ?>">Couple</a></li>
 				<li><a href="<?= base_url('contact/index');  ?>">Contact</a></li>
 			</ul>
 		</div>
