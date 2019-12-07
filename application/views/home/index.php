@@ -1,8 +1,8 @@
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?=base_url(); ?>assets/img/bg.jpg">
+	<section class="hero-section set-bg" data-setbg="<?=base_url('assets/'); ?>img/bg.jpg">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
-				<div class="hs-left"><img src="<?=base_url(); ?>assets/img/slider-img.png" alt=""></div>
+				<div class="hs-left"><img src="<?=base_url('assets/'); ?>img/slider-img.png" alt=""></div>
 				<div class="hs-right">
 					<div class="hs-content">
 						<div class="price">from $19.90</div>
@@ -12,7 +12,7 @@
 				</div>
 			</div>
 			<div class="hs-item">
-				<div class="hs-left"><img src="<?=base_url(); ?>assets/img/slider-img.png" alt=""></div>
+				<div class="hs-left"><img src="<?=base_url('assets/'); ?>img/slider-img.png" alt=""></div>
 				<div class="hs-right">
 					<div class="hs-content">
 						<div class="price">from $19.90</div>
@@ -37,7 +37,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/intro/1.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/1.jpg" alt="#">
 						</figure>
 						<div class="product-info">
 							<h5>Pink Sunglasses</h5>
@@ -49,7 +49,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/intro/2.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/2.jpg" alt="#">
 						</figure>
 						<div class="product-info">
 							<h5>Black Nighty</h5>
@@ -61,7 +61,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/intro/3.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/3.jpg" alt="#">
 							<div class="bache">NEW</div>
 						</figure>
 						<div class="product-info">
@@ -74,7 +74,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/intro/4.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/4.jpg" alt="#">
 						</figure>
 						<div class="product-info">
 							<h5>Yellow Sunglasses</h5>
@@ -86,7 +86,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/intro/5.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/5.jpg" alt="#">
 						</figure>
 						<div class="product-info">
 							<h5>Black Sholder bag</h5>
@@ -114,13 +114,13 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="featured-item">
-						<img src="<?=base_url(); ?>assets/img/featured/featured-1.jpg" alt="">
+						<img src="<?=base_url('assets/'); ?>img/featured/featured-1.jpg" alt="">
 						<a href="#" class="site-btn">see more</a>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="featured-item mb-0">
-						<img src="<?=base_url(); ?>assets/img/featured/featured-2.jpg" alt="">
+						<img src="<?=base_url('assets/'); ?>img/featured/featured-2.jpg" alt="">
 						<a href="#" class="site-btn">see more</a>
 					</div>
 				</div>
@@ -142,14 +142,14 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/1.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/1.jpg" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -164,15 +164,15 @@
 				<div class="mix col-lg-3 col-md-6 new">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/2.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/2.jpg" alt="">
 							<div class="bache">NEW</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -187,14 +187,14 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/3.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/3.jpg" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -209,15 +209,15 @@
 				<div class="mix col-lg-3 col-md-6 new best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/4.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/4.jpg" alt="">
 							<div class="bache sale">SALE</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -232,14 +232,14 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/5.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/5.jpg" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -254,15 +254,15 @@
 				<div class="mix col-lg-3 col-md-6 new">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/6.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/6.jpg" alt="">
 							<div class="bache">NEW</div>
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -277,14 +277,14 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/7.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/7.jpg" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -299,14 +299,14 @@
 				<div class="mix col-lg-3 col-md-6 best">
 					<div class="product-item">
 						<figure>
-							<img src="<?=base_url(); ?>assets/img/products/8.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/products/8.jpg" alt="">
 							<div class="pi-meta">
 								<div class="pi-m-left">
-									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/eye.png" alt="">
 									<p>quick view</p>
 								</div>
 								<div class="pi-m-right">
-									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
+									<img src="<?=base_url('assets/'); ?>img/icons/heart.png" alt="">
 									<p>save</p>
 								</div>
 							</div>
@@ -330,7 +330,7 @@
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="featured-item">
-						<img src="<?=base_url(); ?>assets/img/featured/featured-3.jpg" alt="">
+						<img src="<?=base_url('assets/'); ?>img/featured/featured-3.jpg" alt="">
 						<a href="#" class="site-btn">see more</a>
 					</div>
 				</div>
@@ -338,7 +338,7 @@
 					<h4 class="bgs-title">from the blog</h4>
 					<div class="blog-item">
 						<div class="bi-thumb">
-							<img src="<?=base_url(); ?>assets/img/blog-thumb/1.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/blog-thumb/1.jpg" alt="">
 						</div>
 						<div class="bi-content">
 							<h5>10 tips to dress like a queen</h5>
@@ -348,7 +348,7 @@
 					</div>
 					<div class="blog-item">
 						<div class="bi-thumb">
-							<img src="<?=base_url(); ?>assets/img/blog-thumb/2.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/blog-thumb/2.jpg" alt="">
 						</div>
 						<div class="bi-content">
 							<h5>Fashion Outlet products</h5>
@@ -358,7 +358,7 @@
 					</div>
 					<div class="blog-item">
 						<div class="bi-thumb">
-							<img src="<?=base_url(); ?>assets/img/blog-thumb/3.jpg" alt="">
+							<img src="<?=base_url('assets/'); ?>img/blog-thumb/3.jpg" alt="">
 						</div>
 						<div class="bi-content">
 							<h5>the little black dress just for you</h5>
