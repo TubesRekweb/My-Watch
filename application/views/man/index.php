@@ -12,7 +12,7 @@
 	<!-- Page Info end -->
 
 
-	<!-- Page -->
+	
 	<div class="page-area categorie-page spad">
 		<div class="container">
 			<div class="categorie-filter-warp">
