@@ -9,7 +9,7 @@
 			<img src="<?=base_url(); ?>assets/img/categorie-page-top.png" alt="" class="cata-top-pic">
 		</div>
 	</div>
-	<!-- Page Info end -->
+	
 
 
 	
