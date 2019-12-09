@@ -1,4 +1,4 @@
-	<!-- Page Info -->
+	
 	<div class="page-info-section page-info-big">
 		<div class="container">
 			<h2>Man</h2>
