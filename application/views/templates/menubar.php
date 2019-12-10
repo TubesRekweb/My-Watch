@@ -8,7 +8,7 @@
 		<div class="container-fluid">
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="<?=base_url(); ?>assets/img/logo.png" alt="logo">
+				<img src="<?=base_url(); ?>assets/img/logomw.png" alt="logo" >
 			</div>
 			<!-- responsive -->
 			<div class="nav-switch">
@@ -18,6 +18,7 @@
 				<a href="<?= base_url('keranjang/index');  ?>" class="card-bag"><img src="<?=base_url(); ?>assets/img/icons/bag.png" alt=""><span>2</span></a>
 				<a href="#" class="search"><img src="<?=base_url(); ?>assets/img/icons/search.png" alt=""></a>
 			</div>
+
 			<!-- site menu -->
 			<ul class="main-menu">
 				<li><a href="<?= base_url('home/index');  ?>">Home</a></li>

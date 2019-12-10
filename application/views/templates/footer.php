@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-8 col-sm-12">
 					<div class="footer-widget about-widget">
-						<img src="<?=base_url(); ?>assets/img/logo.png" class="footer-logo" alt="">
+						<img src="<?=base_url(); ?>assets/img/logomw.png" class="footer-logo" alt="">
 						<p>Donec vitae purus nunc. Morbi faucibus erat sit amet congue mattis. Nullam fringilla faucibus urna, id dapibus erat iaculis ut. Integer ac sem.</p>
 						<div class="cards">
 							<img src="<?=base_url(); ?>assets/img/cards/5.png" alt="">
@@ -59,7 +59,7 @@
 							<p>Your Company Ltd </p>
 							<p>1481 Creekside Lane  Avila Beach, CA 93424, </p>
 							<p>+53 345 7953 32453</p>
-							<p>office@youremail.com</p>
+							<p>MyWatch@gmail.com</p>
 						</div>
 					</div>
 				</div>

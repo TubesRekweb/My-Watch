@@ -7,7 +7,7 @@
 	<meta name="keywords" content="plaza, eCommerce, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="<?=base_url(); ?>assets/img/favicon.ico" rel="shortcut icon"/>
+	<link href="<?=base_url(); ?>assets/img/iconjam.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">

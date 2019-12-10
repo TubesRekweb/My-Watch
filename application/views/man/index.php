@@ -1,4 +1,4 @@
-	
+	<!-- Page Info -->
 	<div class="page-info-section page-info-big">
 		<div class="container">
 			<h2>Man</h2>
@@ -9,10 +9,10 @@
 			<img src="<?=base_url(); ?>assets/img/categorie-page-top.png" alt="" class="cata-top-pic">
 		</div>
 	</div>
-	
+	<!-- Page Info end -->
 
 
-	
+	<!-- Page -->
 	<div class="page-area categorie-page spad">
 		<div class="container">
 			<div class="categorie-filter-warp">

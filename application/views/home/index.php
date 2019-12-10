@@ -1,5 +1,5 @@
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?=base_url('assets/'); ?>img/bg.jpg">
+	<section class="hero-section set-bg" data-setbg="<?=base_url('assets/'); ?>img/baground.jpg">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="hs-left"><img src="<?=base_url('assets/'); ?>img/slider-img.png" alt=""></div>
