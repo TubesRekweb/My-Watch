@@ -24,7 +24,7 @@
 			<td><?= $brg->stok ?></td>
 			<td><div class="btn btn-success btn-sm"><i class="fas fa-plus"></i></i></div></td>
 			<td><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></i></div></td>
-			<td><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></i></div></td>
+			<td><a href="<?= base_url(); ?>admin/admin/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></a></i></i></div></td>
 		</tr>
 
 		<?php  endforeach; ?>

@@ -15,4 +15,10 @@ class admin extends CI_Controller {
 			$this->load->view('admin/dashboard', $data);
 			$this->load->view('templates/admin_footer');
 	}
+
+	public function hapus($id){
+		$this->model_barang->hapusDataBarang($id);
+		$this->session->set_flashdata('flash', 'Dihapus');
+		redirect('admin');
+	}
 }

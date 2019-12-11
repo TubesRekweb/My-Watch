@@ -9,4 +9,8 @@ class Model_barang extends CI_Model {
 	public function tambah_barang($data,$table){
 		$this->db->insert($table,$data);
 	}
+
+	public function hapusDataBarang($id){
+		$this->db->delete('tb_barang', ['id' => $id]);
+	}
 }
