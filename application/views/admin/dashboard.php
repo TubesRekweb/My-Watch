@@ -1,12 +1,13 @@
 <div class="container-fluid">
 
+
 <!-- carausel dashboard -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="max-height: 400px;">
     <div class="carousel-item active">
       <img src="<?= base_url('assets/img/baground.jpg')?>" class="d-block w-100" alt="...">
     </div>
@@ -27,17 +28,18 @@
   <!--menampilkan produk barang  -->
   <div class="row text-center mt-3">
     <?php foreach ($barang as $brg) : ?>
-
-      <div class="card ml-3" style="width: 16rem;">
-        <img src="<?= base_url().'assets/img/'.$brg->gambar ?>" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title mb-1"><?= $brg->nama_produk ?></h5>
-          <small><?= $brg->spesifikasi_produk ?></small><br>
-          <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span>
-          <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
-          <a href="#" class="btn btn-sm btn-success">Detail</a>
+      <div class="col-md-3" style="margin-bottom: 20px;">
+        <div class="card" style="width: 100%;">
+          <img src="<?= base_url().'assets/img/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title mb-1"><?= $brg->nama_produk ?></h5>
+            <small><?= $brg->spesifikasi_produk ?></small><br>
+            <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span><br>
+            <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
+            <a href="#" class="btn btn-sm btn-success">Detail</a>
+          </div>
       </div>
-
+    </div>
     <?php endforeach; ?>
     
   </div>
