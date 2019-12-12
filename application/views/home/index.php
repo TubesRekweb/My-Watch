@@ -55,6 +55,7 @@
 							<h5>Black Nighty</h5>
 							<p>$319.50</p>
 							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+							<!-- <?php echo anchor('home/add_to_cart/'. $brg->id, '<div class ="site-btn btn-line"> Tambah ke Keranjang</div>')  ?> -->
 						</div>
 					</div>
 				</li>
