@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class admin extends CI_Controller {
+class Dashboard extends CI_Controller {
 
 	public function index(){
 
@@ -19,6 +19,6 @@ class admin extends CI_Controller {
 	public function hapus($id){
 		$this->model_barang->hapusDataBarang($id);
 		$this->session->set_flashdata('flash', 'Dihapus');
-		redirect('admin');
+		redirect('admin/databarang');
 	}
 }
