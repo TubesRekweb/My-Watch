@@ -22,9 +22,12 @@
 			<td><?= $brg->harga_produk ?></td>
 			<td><?= $brg->warna_produk ?></td>
 			<td><?= $brg->stok ?></td>
+
 			<td><div class="btn btn-success btn-sm"><i class="fas fa-plus"></i></i></div></td>
-			<td><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></i></div></td>
-			<td><a href="<?= base_url(); ?>admin/admin/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></a></i></i></div></td>
+
+			<td><a href="<?= base_url(); ?>admin/Admin/edit/<?= $brg->id ?>"><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></a></i></i></div></td>
+
+			<td><a href="<?= base_url(); ?>admin/Admin/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></a></i></i></div></td>
 		</tr>
 
 		<?php  endforeach; ?>
@@ -73,7 +76,7 @@
 			  
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kembali</button>
         <button type="submit" class="btn btn-primary">Simpan</button>
       </div>
 
