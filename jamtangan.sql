@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2019 at 12:09 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Dec 15, 2019 at 08:54 AM
+-- Server version: 10.3.15-MariaDB
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -43,21 +43,7 @@ CREATE TABLE `couple` (
 --
 
 INSERT INTO `couple` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'Alexander Christie Couple 8588', 'Water Resist : 30M\r\nDiameter : 40mm(cowok) dan 32mm(cewek)\r\nMaterial : Rantai\r\nMesin : Baterai', 550000, 'Biru', 0, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `invoice`
---
-
-CREATE TABLE `invoice` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(60) NOT NULL,
-  `alamat` varchar(255) NOT NULL,
-  `tgl_pesan` datetime NOT NULL,
-  `batas_bayar` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+(1, 'Alexander Christie Couple 8588', 'Water Resist : 30M\r\nDiameter : 40mm(cowok) dan 32mm(cewek)\r\nMaterial : Rantai\r\nMesin : Baterai', 550000, 'Biru', 0, 'alexander_couple.jpg');
 
 -- --------------------------------------------------------
 
@@ -126,12 +112,41 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'a', 'kdkfka', 900000, 'putih', 10, ''),
 (2, 'cau', 'eifhwjwdqagwdqwgdqwgu', 800000, 'merah', 10, 'iconjam.png'),
 (3, 'rolex', 'slxckachahcauca', 2737839, 'hitam', 5, 'iconjam.png'),
 (4, 'eiger', 'owduqwahdashcsazj', 256363377, 'putih', 190, 'iconjam.png'),
 (6, 'iqiwowqiw', 'dsieooao', 10000, 'dsususu', 10, 'Untitled-111.png'),
 (7, 'wduqwu', 'dsusu', 9999, 'djsau', 10, 'Untitled-112.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_invoice`
+--
+
+CREATE TABLE `tb_invoice` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(60) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
+  `tgl_pesan` datetime NOT NULL,
+  `batas_bayar` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_pesanan`
+--
+
+CREATE TABLE `tb_pesanan` (
+  `id` int(11) NOT NULL,
+  `id_invoice` int(11) NOT NULL,
+  `id_brg` int(11) NOT NULL,
+  `nama_brg` varchar(50) NOT NULL,
+  `jumlah` int(3) NOT NULL,
+  `harga` int(10) NOT NULL,
+  `pilihan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -189,12 +204,6 @@ ALTER TABLE `couple`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `invoice`
---
-ALTER TABLE `invoice`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `laki_laki`
 --
 ALTER TABLE `laki_laki`
@@ -210,6 +219,18 @@ ALTER TABLE `perempuan`
 -- Indexes for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_invoice`
+--
+ALTER TABLE `tb_invoice`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_pesanan`
+--
+ALTER TABLE `tb_pesanan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -235,12 +256,6 @@ ALTER TABLE `couple`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `invoice`
---
-ALTER TABLE `invoice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `laki_laki`
 --
 ALTER TABLE `laki_laki`
@@ -257,6 +272,18 @@ ALTER TABLE `perempuan`
 --
 ALTER TABLE `tb_barang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tb_invoice`
+--
+ALTER TABLE `tb_invoice`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_pesanan`
+--
+ALTER TABLE `tb_pesanan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user`
