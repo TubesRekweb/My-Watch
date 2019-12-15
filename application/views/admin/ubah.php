@@ -7,7 +7,7 @@
              Form Ubah Data Barang
           </div>
             <div class="card-body">
-              <form action="<?= base_url('admin/Admin/ubah/'); ?>" method="post">
+              <form action="<?= base_url('admin/dashboard/ubah'); ?>" method="post">
                 <input type="hidden" name="id" value="<?= $barang['id']; ?>">
 
           <div class="form-group">
@@ -34,6 +34,7 @@
               <label for="stok">Stok</label>
               <input type="text" name="stok" class="form-control" id="stok" value="<?= $barang['stok']; ?>">
           </div>
+
         
         <button type="button" name="kembali" class="btn btn-danger">Kembali</button>
         <button type="submit" name="ubah" class="btn btn-primary float-right">Ubah Data</button>

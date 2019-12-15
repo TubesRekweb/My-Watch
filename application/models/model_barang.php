@@ -24,11 +24,11 @@ class Model_barang extends CI_Model {
 			"spesifikasi_produk" => $this->input->post('spesifikasi_produk'),
 			"harga_produk" => $this->input->post('harga_produk'),
 			"warna_produk" => $this->input->post('warna_produk'),
-			"stok" => $this->input->post('stok')
+			"stok" => $this->input->post('stok'),
 		];
 
 		$this->db->where('id', $this->input->post('id'));
 		$this->db->update('tb_barang', $data);
-		redirect('admin/Admin');	
+		redirect('admin/databarang');	
 	}
 }

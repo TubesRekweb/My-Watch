@@ -35,8 +35,7 @@
             <h5 class="card-title mb-1"><?= $brg->nama_produk ?></h5>
             <small><?= $brg->spesifikasi_produk ?></small><br>
             <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span><br>
-            <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
-            <a href="#" class="btn btn-sm btn-success">Detail</a>
+            <a href="<?= base_url(); ?>admin/dashboard/detail/<?= $brg->id ?>" class="btn btn-sm btn-success">Detail</a>
           </div>
       </div>
     </div>

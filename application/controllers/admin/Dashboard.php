@@ -35,6 +35,14 @@ class Dashboard extends CI_Controller {
 	public function ubah(){
 			$this->model_barang->ubahDataBarang();
 			$this->session->set_flashdata('flash', 'Diubah');
-			redirect('admin/Admin');		
+			redirect('admin/dashboard');		
+	}
+
+	public function detail($id){
+		$data['judul'] = 'Detail Data Barang';
+		$data['barang'] = $this->model_barang->getBarangById($id);
+		$this->load->view('templates/admin_header', $data);
+		$this->load->view('admin/detail', $data);
+		$this->load->view('templates/admin_footer');
 	}
 }
