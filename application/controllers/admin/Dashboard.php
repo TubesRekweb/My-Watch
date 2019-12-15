@@ -19,7 +19,7 @@ class Dashboard extends CI_Controller {
 	public function hapus($id){
 		$this->model_barang->hapusDataBarang($id);
 		$this->session->set_flashdata('flash', 'Dihapus');
-		redirect('admin/databarang');
+		redirect('admin/Databarang');
 	}
 
 
@@ -35,6 +35,6 @@ class Dashboard extends CI_Controller {
 	public function ubah(){
 			$this->model_barang->ubahDataBarang();
 			$this->session->set_flashdata('flash', 'Diubah');
-			redirect('admin/Admin');		
+			redirect('admin/Dashboard');		
 	}
 }

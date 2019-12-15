@@ -45,7 +45,7 @@ class Databarang extends CI_Controller {
 
 			// menginput tabel barang
 			$this->model_barang->tambah_barang($data, 'tb_barang');
-			redirect('databarang');
+			redirect('admin/databarang');
 
 
  
