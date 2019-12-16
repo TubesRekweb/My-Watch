@@ -10,7 +10,7 @@
         }
         public function index()
         {
-            $data['women']=$this->Model_women->getAllWomen();
+            $data['women'] = $this->Model_women->getAllWomen();
             $this->load->view('templates/header');
             $this->load->view('templates/menubar');
             $this->load->view('woman/index',$data);
@@ -19,7 +19,7 @@
         }
         public function keranjang($id)
 	{
-		$data['women']=$this->Model_women->getWomenById($id);
+		$data['women'] = $this->Model_women->getWomenById($id);
         $this->load->view('templates/header');
         $this->load->view('templates/menubar');
         $this->load->view('woman/detail',$data);
@@ -29,7 +29,7 @@
     
     public function tambah_ke_keranjang($id)
 	{
-		$barang = $this->model_barang->find($id);
+		$barang = $this->Model_women->find($id);
 		$data = array(
 			'id'      => $barang->id,
 			'qty'     => 1,
@@ -38,7 +38,7 @@
 			
     );
     $this->cart->insert($data);
-	redirect ('women');
+	redirect ('Woman');
     }
     public function detail_keranjang()
     {

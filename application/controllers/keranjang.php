@@ -31,11 +31,11 @@ class Keranjang extends CI_Controller
 	redirect ('home');
 	}
 
-	public function detail_keranjang()
+	 public function detail_keranjang()
     {
-        $this->load->view('templates/header');
-        $this->load->view('templates/menubar');
+        // $this->load->view('templates/header');
+        // $this->load->view('templates/menubar');
         $this->load->view('keranjang/index');
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
 }

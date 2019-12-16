@@ -14,17 +14,17 @@ class Model_women extends CI_Model {
 		$this->db->delete('tb_barang', ['id' => $id]);
 	}
 
-	// public function find($id)
-	// {
-	// 	$result = $this->db->where('id', $id)
-	// 			->limit(1)
-	// 			->get('perempuan');
-	// 	if($result->num_rows() > 1) {
-	// 		return $result->row();
-	// 	} else {
-	// 		return array();
+		public function find($id)
+	{
+		$result = $this->db->where('id', $id)
+				->limit(1)
+				->get('perempuan');
+		if($result->num_rows() > 0) {
+			return $result->row();
+		} else {
+			return array();
 
-	// 	}
+		}
 		
-	// }
+	}
 }
