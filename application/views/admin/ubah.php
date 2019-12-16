@@ -7,7 +7,7 @@
              Form Ubah Data Barang
           </div>
             <div class="card-body">
-              <form action="<?= base_url('admin/Dashboard/ubah/'); ?>" method="post">
+              <form action="<?= base_url('admin/Databarang/ubah/'); ?>" method="post">
                 <input type="hidden" name="id" value="<?= $barang['id']; ?>">
 
           <div class="form-group">
@@ -20,6 +20,14 @@
               <input type="text" name="spesifikasi_produk" class="form-control" id="spesifikasi" value="<?= $barang['spesifikasi_produk']; ?>">
           </div>
 
+           <div class="form-group">
+                   <label> Kategori Produk</label> 
+                   <select class="form-control" name="kategori_produk" id="kategori" value="<?= $barang['kategori_produk']; ?>">
+                    <option>Man</option>
+                    <option>Woman</option>
+                    <option>Couple</option>
+                   </select>
+          </div>
           <div class="form-group">
               <label for="harga_produk">Harga_Produk</label>
               <input type="text" name="harga_produk" class="form-control" id="harga" value="<?= $barang['harga_produk']; ?>">
