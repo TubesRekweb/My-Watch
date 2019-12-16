@@ -14,9 +14,35 @@
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
 			</div>
+
+<!-- 
+			<div class="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						</?php $keranjang = 'Keranjang Belanja: '.$this->cart->total_items(). 'items' ?>
+					
+						</?php echo anchor('keranjang/detail_keranjang', $keranjang)?>
+						
+					</li>
+				</ul>
+			</div> -->
+
+
+
+
+
+
+
 			<div class="header-right">
-				<a href="<?= base_url('keranjang/index');  ?>" class="card-bag"><img src="<?=base_url(); ?>assets/img/icons/bag.png" alt=""><span>2</span></a>
-				<a href="#" class="search"><img src="<?=base_url(); ?>assets/img/icons/search.png" alt=""></a>
+				<i class="fas fa-cart-plus">
+					<?php $keranjang = $this->cart->total_items() ?>
+					<?php echo anchor('keranjang/detail_keranjang', $keranjang)?>
+				</i>
+					
+				<!-- <img src="<//?=base_url(); ?>assets/img/icons/bag.png" alt=""> -->
+				
+				
+				<!-- <a href="" class="search"><img src="</?=base_url(); ?>assets/img/icons/search.png" alt=""></a> -->
 			</div>
 
 			<!-- site menu -->

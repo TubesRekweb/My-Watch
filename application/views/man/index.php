@@ -55,7 +55,7 @@
 						<div class="product-info">
 							<h6><?= $mn['nama_produk']; ?></h6>
 							<p>$39.90</p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+							<a href="<?php echo base_url();?>man/keranjang/<?= $mn['id'];?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
 					<?php endforeach; ?>

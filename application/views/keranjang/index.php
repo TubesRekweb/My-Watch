@@ -1,20 +1,49 @@
+	<div class="container-fluid">
+		<h4>Keranjang Belanja</h4>
+
+		<table class="table table-bordered table-striped tabel-hover">
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>Jumlah</th>
+				<th>Harga</th>
+				<th>Subtotal</th>
+			</tr>
+			<?php
+			$no = 0;
+			foreach ($this->cart->contents() as $items) : ?>
+
+			<tr>
+				<td><?= $no++ ?></td>
+				<td><?= $items['name'] ?></td>
+				<td><?= $items['qty'] ?></td>
+				<td><?= $items['price'] ?></td>
+				<td><?= $items['subtotal'] ?></td>
+			</tr>
+			<?php endforeach; ?>
+
+
+		</table>
+	</div>
+	
+	
 	<!-- Page Info -->
-	<div class="page-info-section page-info">
-		<div class="container">
-			<div class="site-breadcrumb">
+	<!-- <div class="page-info-section page-info">
+		<div class="container"> -->
+			<!-- <div class="site-breadcrumb">
 				<a href="">Home</a> / 
 				<a href="">Sales</a> / 
 				<a href="">Bags</a> / 
 				<span>Cart</span>
-			</div>
-			<img src="<?=base_url(); ?>assets/img/page-info-art.png" alt="" class="page-info-art">
+			</div> -->
+			<!-- <img src="<//?=base_url(); ?>assets/img/page-info-art.png" alt="" class="page-info-art">
 		</div>
-	</div>
+	</div> -->
 	<!-- Page Info end -->
 
 
 	<!-- Page -->
-	<div class="page-area cart-page spad">
+	<!-- <div class="page-area cart-page spad">
 		<div class="container">
 			<div class="cart-table">
 				<table>
@@ -29,7 +58,7 @@
 					<tbody>
 						<tr>
 							<td class="product-col">
-								<img src="<?=base_url(); ?>assets/img/product/cart.jpg" alt="">
+								<img src="<//?base_url(); ?>assets/img/product/cart.jpg" alt="">
 								<div class="pc-title">
 									<h4>Black Shoulder Bag</h4>
 									<a href="#">Edit Product</a>
@@ -48,8 +77,10 @@
 				</table>
 			</div>
 			<div class="row cart-buttons">
-				<div class="col-lg-5 col-md-5">
-					<div class="site-btn btn-continue">Continue shooping</div>
+				<div class="col-lg-5 col-md-5"> -->
+				<!-- ss -->
+				<!-- <a href="<//?php echo base_url();?>woman/keranjang/" class="site-btn btn-continue">Continue Shopping</a>
+					
 				</div>
 				<div class="col-lg-7 col-md-7 text-lg-right text-left">
 					<div class="site-btn btn-clear">Clear cart</div>
@@ -59,8 +90,8 @@
 		</div>
 		<div class="card-warp">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
+				<div class="row"> -->
+					<!-- <div class="col-lg-4">
 						<div class="shipping-info">
 							<h4>Shipping method</h4>
 							<p>Select the one you want</p>
@@ -85,8 +116,8 @@
 								<button class="site-btn">Apply</button>
 							</div>
 						</div>
-					</div>
-					<div class="offset-lg-2 col-lg-6">
+					</div> -->
+					<!-- <div class="offset-lg-2 col-lg-6">
 						<div class="cart-total-details">
 							<h4>Cart total</h4>
 							<p>Final Info</p>
@@ -101,5 +132,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Page end -->
+

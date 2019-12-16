@@ -57,7 +57,7 @@
 						<div class="product-info">
 							<h6><?= $wm['nama_produk'];?></h6>
 							<p>$39.90</p>
-							<a href="<?php echo base_url();?>woman/keranjang/<?= $wm['id'];?>" class="site-btn btn-line">ADD TO CART</a>
+							<a href="<?php echo base_url();?>woman/tambah_ke_keranjang/<?= $wm['id'];?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
 					<?php endforeach;?>

@@ -14,7 +14,7 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="<?=base_url(); ?>assets/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="<?=base_url(); ?>assets/css/font-awesome.min.css"/>
+	<link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="<?=base_url(); ?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" href="<?=base_url(); ?>assets/css/style.css"/>
 	<link rel="stylesheet" href="<?=base_url(); ?>assets/css/animate.css"/>

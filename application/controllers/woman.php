@@ -25,5 +25,27 @@
         $this->load->view('woman/detail',$data);
         $this->load->view('templates/footer');
    
-	}
     }
+    
+    public function tambah_ke_keranjang($id)
+	{
+		$barang = $this->model_barang->find($id);
+		$data = array(
+			'id'      => $barang->id,
+			'qty'     => 1,
+			'price'   => $barang->harga_produk,
+			'name'    => $barang->nama_produk
+			
+    );
+    $this->cart->insert($data);
+	redirect ('women');
+    }
+    public function detail_keranjang()
+    {
+        
+        $this->load->view('templates/header');
+        $this->load->view('templates/menubar');
+        $this->load->view('keranjang/detail');
+        $this->load->view('templates/footer');
+    }
+}
