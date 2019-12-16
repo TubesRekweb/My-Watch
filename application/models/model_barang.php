@@ -22,6 +22,7 @@ class Model_barang extends CI_Model {
 		$data = [
 			"nama_produk" => $this->input->post('nama_produk'),
 			"spesifikasi_produk" => $this->input->post('spesifikasi_produk'),
+			"kategori_produk" => $this->input->post('kategori_produk'),
 			"harga_produk" => $this->input->post('harga_produk'),
 			"warna_produk" => $this->input->post('warna_produk'),
 			"stok" => $this->input->post('stok')
@@ -29,7 +30,7 @@ class Model_barang extends CI_Model {
 
 		$this->db->where('id', $this->input->post('id'));
 		$this->db->update('tb_barang', $data);
-		redirect('admin/Admin');	
+		redirect('admin/Databarang');	
 	}
 
 	public function find($id)

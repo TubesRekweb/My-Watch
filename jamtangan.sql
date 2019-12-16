@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2019 at 12:09 PM
+-- Generation Time: Dec 16, 2019 at 12:26 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -118,20 +118,17 @@ CREATE TABLE `tb_barang` (
   `harga_produk` int(11) NOT NULL,
   `warna_produk` varchar(50) NOT NULL,
   `stok` int(11) NOT NULL,
-  `gambar` text NOT NULL
+  `gambar` text NOT NULL,
+  `kategori_produk` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tb_barang`
 --
 
-INSERT INTO `tb_barang` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'a', 'kdkfka', 900000, 'putih', 10, ''),
-(2, 'cau', 'eifhwjwdqagwdqwgdqwgu', 800000, 'merah', 10, 'iconjam.png'),
-(3, 'rolex', 'slxckachahcauca', 2737839, 'hitam', 5, 'iconjam.png'),
-(4, 'eiger', 'owduqwahdashcsazj', 256363377, 'putih', 190, 'iconjam.png'),
-(6, 'iqiwowqiw', 'dsieooao', 10000, 'dsususu', 10, 'Untitled-111.png'),
-(7, 'wduqwu', 'dsusu', 9999, 'djsau', 10, 'Untitled-112.png');
+INSERT INTO `tb_barang` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`, `kategori_produk`) VALUES
+(16, 'anwar', 'kdkfka', 90000, 'coklat', 10, '', 'Woman'),
+(17, 'iqiwowqiw', 'kdkfka', 90000, 'putih', 100000, '', 'Woman');
 
 -- --------------------------------------------------------
 
@@ -256,7 +253,7 @@ ALTER TABLE `perempuan`
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user`

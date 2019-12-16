@@ -29,7 +29,7 @@
 	<!-- Intro section -->
 	<section class="intro-section spad pb-0">
 		<div class="section-title">
-			<h2>pemium products</h2>
+			<h2>premium products</h2>
 			<p>We recommend</p>
 		</div>
 		<div class="intro-slider">
@@ -37,7 +37,7 @@
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/1.jpg" alt="#">
+							<img src="<?=base_url('assets/'); ?>img/intro/alexandre_couple.jpg" alt="#">
 						</figure>
 						<div class="product-info">
 							<h5>Pink Sunglasses</h5>

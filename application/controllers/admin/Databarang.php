@@ -14,6 +14,7 @@ class Databarang extends CI_Controller {
 	{
 		$nama_produk =$this->input->post('nama_produk');
 		$spesifikasi_produk =$this->input->post('spesifikasi_produk');
+	    $kategori_produk =$this->input->post('kategori_produk');
 		$harga_produk =$this->input->post('harga_produk');
 		$warna_produk =$this->input->post('warna_produk');
 		$stok =$this->input->post('stok');
@@ -37,6 +38,7 @@ class Databarang extends CI_Controller {
 			$data = array(
 				'nama_produk'       => $nama_produk,
 				'spesifikasi_produk'=> $spesifikasi_produk,
+				'kategori_produk'   => $kategori_produk,
 				'harga_produk'      => $harga_produk,
 				'warna_produk'      => $warna_produk,
 				"stok"              => $stok,
@@ -45,9 +47,29 @@ class Databarang extends CI_Controller {
 
 			// menginput tabel barang
 			$this->model_barang->tambah_barang($data, 'tb_barang');
-			redirect('databarang');
+			redirect('admin/databarang');
+	}
+
+		public function hapus($id){
+		$this->model_barang->hapusDataBarang($id);
+		$this->session->set_flashdata('flash', 'Dihapus');
+		redirect('admin/Databarang');
+	}
 
 
- 
+	//function ubah
+	public function edit($id){
+		$data['judul'] = 'Form Ubah Data Barang';
+		$data['barang'] = $this->model_barang->getBarangById($id);
+			$this->load->view('templates/admin_header',$data);
+			$this->load->view('templates/admin_menubar');
+			$this->load->view('admin/ubah', $data);
+			$this->load->view('templates/admin_footer');
+	}
+
+	public function ubah(){
+			$this->model_barang->ubahDataBarang();
+			$this->session->set_flashdata('flash', 'Diubah');
+			redirect('admin/Databarang');		
 	}
 }
