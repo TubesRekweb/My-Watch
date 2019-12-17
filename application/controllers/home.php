@@ -9,10 +9,13 @@ class Home extends CI_Controller
 	}
 	public function index()
 	{
-        $this->load->view('templates/header');
-        $this->load->view('templates/menubar');
-        $this->load->view('home/index');
-        $this->load->view('templates/footer');
+		
+			// menampilkan barang
+		$data['barang'] = $this->model_barang->tampil_data()->result();
+        $this->load->view('templates/header',$data);
+        $this->load->view('templates/menubar',$data);
+        $this->load->view('home/index',$data);
+        $this->load->view('templates/footer',$data);
    
 	}
 	

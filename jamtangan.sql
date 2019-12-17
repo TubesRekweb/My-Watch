@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2019 at 12:26 PM
+-- Generation Time: Dec 17, 2019 at 03:05 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -25,29 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `couple`
---
-
-CREATE TABLE `couple` (
-  `id` int(11) NOT NULL,
-  `nama_produk` varchar(60) NOT NULL,
-  `spesifikasi_produk` varchar(200) NOT NULL,
-  `harga_produk` int(11) NOT NULL,
-  `warna_produk` varchar(50) NOT NULL,
-  `stok` int(25) NOT NULL,
-  `gambar` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `couple`
---
-
-INSERT INTO `couple` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'Alexander Christie Couple 8588', 'Water Resist : 30M\r\nDiameter : 40mm(cowok) dan 32mm(cewek)\r\nMaterial : Rantai\r\nMesin : Baterai', 550000, 'Biru', 0, '');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `invoice`
 --
 
@@ -58,52 +35,6 @@ CREATE TABLE `invoice` (
   `tgl_pesan` datetime NOT NULL,
   `batas_bayar` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `laki_laki`
---
-
-CREATE TABLE `laki_laki` (
-  `id` int(11) NOT NULL,
-  `nama_produk` varchar(50) NOT NULL,
-  `spesifikasi_produk` varchar(200) NOT NULL,
-  `harga_produk` int(11) NOT NULL,
-  `warna_produk` varchar(50) NOT NULL,
-  `stok` int(25) NOT NULL,
-  `gambar` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `laki_laki`
---
-
-INSERT INTO `laki_laki` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'SKMEI 1428', 'Strap : PU\r\nDiameter : 48mm\r\nDial Thickness : 16mm\r\nStrap length : 220mm\r\nStrap width : 24mm\r\nWater Resistant : 30M\r\n12/24 Hour Clock', 186000, 'Hitam', 0, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `perempuan`
---
-
-CREATE TABLE `perempuan` (
-  `id` int(11) NOT NULL,
-  `nama_produk` varchar(60) NOT NULL,
-  `spesifikasi_produk` varchar(200) NOT NULL,
-  `harga_produk` int(11) NOT NULL,
-  `warna_produk` varchar(50) NOT NULL,
-  `stok` int(25) NOT NULL,
-  `gambar` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `perempuan`
---
-
-INSERT INTO `perempuan` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`) VALUES
-(1, 'Fossil ES4534', 'Diameter : 38mm\r\nkualitas : original\r\nMovement : japanese Quartz\r\nWater resistant : 3 ATM\r\nMaterial Strap : All Stainless\r\nMesin : baterai\r\nWarranty : 2 Tahun\r\nKaca : mineral Glass', 970000, 'Emas', 0, '');
 
 -- --------------------------------------------------------
 
@@ -119,7 +50,7 @@ CREATE TABLE `tb_barang` (
   `warna_produk` varchar(50) NOT NULL,
   `stok` int(11) NOT NULL,
   `gambar` text NOT NULL,
-  `kategori_produk` varchar(25) NOT NULL
+  `kategori_produk` varchar(25) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -127,8 +58,9 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id`, `nama_produk`, `spesifikasi_produk`, `harga_produk`, `warna_produk`, `stok`, `gambar`, `kategori_produk`) VALUES
-(16, 'anwar', 'kdkfka', 90000, 'coklat', 10, '', 'Woman'),
-(17, 'iqiwowqiw', 'kdkfka', 90000, 'putih', 100000, '', 'Woman');
+(19, 'aceng', 'kdkfka', 90000, 'putihhitam', 909, '32.jpg', 'Man'),
+(20, 'a', 'kdkfka', 90000, 'merah', 1900, '2.jpg', 'Couple'),
+(23, 'aceng', 'wowqqiwuuw', 900000, 'putih', 909, '34.jpg', 'Woman');
 
 -- --------------------------------------------------------
 
@@ -153,8 +85,11 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_create`) VALUES
 (9, 'Rima Riani', 'rimarn@gmail.com', 'default.jpg', '$2y$10$dvqC/gyLYruLNnOxo7Qnf.uOQ2vSdgkS841ZuOxHFUh1Tqzd1cQ0y', 1, 1, 1575641269),
-(10, 'yuda', 'yuda@gmail.com', 'default.jpg', '$2y$10$bZ9ZUha6XdOuiZkqGiRJMOx.jw1MBjYtaCV73W5C/rO50htkwOrwu', 2, 1, 1575641924),
-(11, 'rhexy', 'rhexy@gmail.com', 'default.jpg', '$2y$10$3ZN8gLykkHEE4VEEPb16WeapUTWau9U9V.y0B3iZFwZyL6I.xY7/W', 2, 1, 1575735237);
+(11, 'rhexy', 'rhexy@gmail.com', 'default.jpg', '$2y$10$3ZN8gLykkHEE4VEEPb16WeapUTWau9U9V.y0B3iZFwZyL6I.xY7/W', 2, 1, 1575735237),
+(12, 'rhexy', 'cau@gmail.com', 'default.jpg', '$2y$10$v7BFrZUOyrNAH1Moi7PQSeQPwAOMiXDsj6AQ2ZJ0iVI4VBBc.E0Zq', 2, 1, 1576590253),
+(13, 'rhexy', 'lukas@gmail.com', 'default.jpg', '$2y$10$7IGb2F5351QFteGe6sxcMusI4UfnnuEQDF8Il4QCm9AYevennJOuC', 2, 1, 1576590482),
+(14, 'rhexy', 'OWO@mail.com', 'default.jpg', '$2y$10$kKI4OPvzSpd7VwBVpOI9vu0FKwMsxWJgKnAiHkA8/bsWU/mMbt5/2', 2, 1, 1576590701),
+(15, 'rhexy', 'io@gmail.com', 'default.jpg', '$2y$10$cajyPA8Orj64tBwYq/yCwO/27B1I5qma7ZsNOg4s1XQItk88XuNNS', 1, 1, 1576590727);
 
 -- --------------------------------------------------------
 
@@ -180,27 +115,9 @@ INSERT INTO `user_table` (`id`, `role`) VALUES
 --
 
 --
--- Indexes for table `couple`
---
-ALTER TABLE `couple`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `invoice`
 --
 ALTER TABLE `invoice`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `laki_laki`
---
-ALTER TABLE `laki_laki`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `perempuan`
---
-ALTER TABLE `perempuan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -226,40 +143,22 @@ ALTER TABLE `user_table`
 --
 
 --
--- AUTO_INCREMENT for table `couple`
---
-ALTER TABLE `couple`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `laki_laki`
---
-ALTER TABLE `laki_laki`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `perempuan`
---
-ALTER TABLE `perempuan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_table`

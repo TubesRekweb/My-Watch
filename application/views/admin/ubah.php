@@ -43,7 +43,7 @@
               <input type="text" name="stok" class="form-control" id="stok" value="<?= $barang['stok']; ?>">
           </div>
         
-        <button type="button" name="kembali" class="btn btn-danger">Kembali</button>
+        <a href="<?= base_url('admin/Databarang'); ?>" class ="btn btn-danger">Kembali</a>
         <button type="submit" name="ubah" class="btn btn-primary float-right">Ubah Data</button>
 
         </form>

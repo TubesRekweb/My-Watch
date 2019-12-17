@@ -59,7 +59,7 @@
 			  </div>
 			  <div class="form-group">
                    <label> Kategori Produk</label> 
-                   <select class="form-control" name="kategori">
+                   <select class="form-control" name="kategori_produk">
                    	<option>Man</option>
                    	<option>Woman</option>
                    	<option>Couple</option>
