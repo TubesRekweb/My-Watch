@@ -88,10 +88,15 @@
 				<td><?= $no++ ?></td>
 				<td><?= $items['name'] ?></td>
 				<td><?= $items['qty'] ?></td>
-				<td><?= $items['price'] ?></td>
-				<td><?= $items['subtotal'] ?></td>
+				<td align="right">Rp. <?= number_format($items['price'], 0,',','.')  ?></td>
+				<td align="right">Rp. <?= number_format($items['subtotal'], 0,',','.')  ?></td>
 			</tr>
+			
 			<?php endforeach; ?>
+			<tr>
+			<td colspan="4"></td>
+				<td align="right">Rp. <?= number_format($this->cart->total(), 0,',','.') ?> </td>
+			</tr>
 
 
 		</table>

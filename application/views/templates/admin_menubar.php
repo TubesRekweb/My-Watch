@@ -35,6 +35,13 @@
           <span>Data Barang</span></a>
       </li>
 
+      <li class="nav-item active">
+        <a class="nav-link" href="<?= base_url('auth/registration'); ?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Create Admin</span></a>
+      </li>
+                    
+
        <!-- Divider -->
       <hr class="sidebar-divider">
 

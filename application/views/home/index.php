@@ -34,68 +34,23 @@
 		</div>
 		<div class="intro-slider">
 			<ul class="slidee">
+
+						<?php foreach ($barang as $brg) : ?>
 				<li>
 					<div class="intro-item">
 						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/alexandre_couple.jpg" alt="#">
+							<img src="<?= base_url().'assets/img/uploads/'.$brg->gambar ?>" alt="#">
 						</figure>
 						<div class="product-info">
-							<h5>Pink Sunglasses</h5>
-							<p>$319.50</p>
+							<h5><?= $brg->nama_produk ?></h5>
+							<p>Rp.<?= $brg->harga_produk ?></p>
 							<a href="#" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
+
 				</li>
-				<li>
-					<div class="intro-item">
-						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/2.jpg" alt="#">
-						</figure>
-						<div class="product-info">
-							<h5>Black Nighty</h5>
-							<p>$319.50</p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
-							<!-- <?php echo anchor('home/add_to_cart/'. $brg->id, '<div class ="site-btn btn-line"> Tambah ke Keranjang</div>')  ?> -->
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="intro-item">
-						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/3.jpg" alt="#">
-							<div class="bache">NEW</div>
-						</figure>
-						<div class="product-info">
-							<h5>Yellow Sholder bag</h5>
-							<p>$319.50</p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="intro-item">
-						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/4.jpg" alt="#">
-						</figure>
-						<div class="product-info">
-							<h5>Yellow Sunglasses</h5>
-							<p>$319.50</p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="intro-item">
-						<figure>
-							<img src="<?=base_url('assets/'); ?>img/intro/5.jpg" alt="#">
-						</figure>
-						<div class="product-info">
-							<h5>Black Sholder bag</h5>
-							<p>$319.50</p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
-						</div>
-					</div>
-				</li>
+
+						  <?php endforeach; ?>
 			</ul>
 		</div>
 		<div class="container">
@@ -164,7 +119,6 @@
 					</div>
 					
 				</div>
-			
 			</div>
 		</div>
 	</section>
