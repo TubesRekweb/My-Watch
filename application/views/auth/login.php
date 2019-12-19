@@ -38,7 +38,13 @@
                     <a class="small" href="forgot-password.html">Forgot Password?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
+                    <a class="small" href="<?= base_url('auth/registration'); ?>">Create an Account Admin!</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="<?= base_url('auth/registrationuser'); ?>">Create an Account User!</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="<?= base_url('home/index'); ?>">Kembali</a>
                   </div>
                 </div>
               </div>

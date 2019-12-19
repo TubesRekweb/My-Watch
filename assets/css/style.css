@@ -628,7 +628,7 @@ ol {
 .product-filter {
 	list-style: none;
 	text-align: center;
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 }
 
 .product-filter li {
@@ -794,7 +794,7 @@ ol {
 .blog-section .bgs-title {
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-bottom: 85px;
+	margin-bottom: 42.5px;
 }
 
 .blog-item {
@@ -921,7 +921,7 @@ ol {
 ========================*/
 
 .page-info-section {
-	background: #ebebeb;
+	background: grey;
 }
 
 .page-info-section.page-info-big {

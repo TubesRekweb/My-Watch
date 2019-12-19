@@ -16,7 +16,7 @@ class Keranjang extends CI_Controller
    
 	}
 
-	public function add_to_cart()
+	public function tambah_ke_keranjang()
 	{
 		$barang = $this->model_barang->find($id);
 		$data = array(
@@ -28,6 +28,14 @@ class Keranjang extends CI_Controller
 	);
 	
 	$this->cart->insert($data);
-	// redirect ('home');
+	redirect ('home');
 	}
+
+	 public function detail_keranjang()
+    {
+        // $this->load->view('templates/header');
+        // $this->load->view('templates/menubar');
+        $this->load->view('keranjang/index');
+        // $this->load->view('templates/footer');
+    }
 }

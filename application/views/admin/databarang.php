@@ -6,6 +6,7 @@
 			<th>NO</th>
 			<th>NAMA</th>
 			<th>SPESIFIKASI</th>
+			<th>KATEGORI</th>
 			<th>HARGA</th>
 			<th>WARNA</th>
 			<th>STOK</th>
@@ -21,10 +22,12 @@
 			<td><?= ++$no ?></td>
 			<td><?= $brg->nama_produk ?></td>
 			<td><?= $brg->spesifikasi_produk ?></td>
+			<td><?= $brg->kategori_produk ?></td>
 			<td><?= $brg->harga_produk ?></td>
 			<td><?= $brg->warna_produk ?></td>
 			<td><?= $brg->stok ?></td>
 
+<<<<<<< HEAD
 			<td><a href="<?= base_url(); ?>admin/dashboard/edit/<?= $brg->id ?>"><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></a></i></i></div></td>
 
 			<td><a href="<?= base_url(); ?>admin/dashboard/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></a></i></i></div></td>
@@ -33,6 +36,11 @@
 			
 
 			
+=======
+			<td><a href="<?= base_url(); ?>admin/Databarang/edit/<?= $brg->id ?>"><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></a></i></div></td>
+
+			<td><a href="<?= base_url(); ?>admin/Databarang/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash" ></a></i></div></td>
+>>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
 		</tr>
 
 		<?php  endforeach; ?>
@@ -61,6 +69,14 @@
 			  <div class="form-group">
                    <label> Spesifikasi Produk</label> 
 				   <input type="text" name="spesifikasi_produk" class="form-control">
+			  </div>
+			  <div class="form-group">
+                   <label> Kategori Produk</label> 
+                   <select class="form-control" name="kategori_produk">
+                   	<option>Man</option>
+                   	<option>Woman</option>
+                   	<option>Couple</option>
+                   </select>
 			  </div>
 			  <div class="form-group">
                    <label> Harga Produk</label> 
