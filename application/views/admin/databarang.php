@@ -11,7 +11,7 @@
 			<th>WARNA</th>
 			<th>STOK</th>
 			<th colspan="2">AKSI</th>
-			<th>GAMBAR</th>
+			<!-- <th>GAMBAR</th> -->
 			
 		</tr>
 		
@@ -27,20 +27,18 @@
 			<td><?= $brg->warna_produk ?></td>
 			<td><?= $brg->stok ?></td>
 
-<<<<<<< HEAD
-			<td><a href="<?= base_url(); ?>admin/dashboard/edit/<?= $brg->id ?>"><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></a></i></i></div></td>
 
-			<td><a href="<?= base_url(); ?>admin/dashboard/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></a></i></i></div></td>
+			
 
-			<td><img src="<?= base_url('assets/img/uploads/') ?><?= $brg->gambar  ?>"></td>
+			<!-- <td><img src="<?= base_url('assets/img/uploads/') ?><?= $brg->gambar  ?>"></td> -->
 			
 
 			
-=======
+
 			<td><a href="<?= base_url(); ?>admin/Databarang/edit/<?= $brg->id ?>"><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></a></i></div></td>
 
 			<td><a href="<?= base_url(); ?>admin/Databarang/hapus/<?= $brg->id ?>" onclick="return confirm('yakin?');"><div class="btn btn-danger btn-sm"><i class="fas fa-trash" ></a></i></div></td>
->>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
+
 		</tr>
 
 		<?php  endforeach; ?>

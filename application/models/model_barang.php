@@ -30,11 +30,8 @@ class Model_barang extends CI_Model {
 
 		$this->db->where('id', $this->input->post('id'));
 		$this->db->update('tb_barang', $data);
-<<<<<<< HEAD
+
 		redirect('admin/databarang');	
-=======
-		redirect('admin/Databarang');	
->>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
 	}
 
 	// public function find($id)

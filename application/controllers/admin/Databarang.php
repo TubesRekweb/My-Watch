@@ -48,8 +48,6 @@ class Databarang extends CI_Controller {
 			// menginput tabel barang
 			$this->model_barang->tambah_barang($data, 'tb_barang');
 			redirect('admin/databarang');
-<<<<<<< HEAD
-=======
 	}
 
 		public function hapus($id){
@@ -57,8 +55,6 @@ class Databarang extends CI_Controller {
 		$this->session->set_flashdata('flash', 'Dihapus');
 		redirect('admin/Databarang');
 	}
-
->>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
 
 	//function ubah
 	public function edit($id){

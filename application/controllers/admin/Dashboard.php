@@ -29,7 +29,6 @@ class Dashboard extends CI_Controller {
 		}
 	}
 
-<<<<<<< HEAD
 	public function ubah(){
 			$this->model_barang->ubahDataBarang();
 			$this->session->set_flashdata('flash', 'Diubah');
@@ -44,6 +43,4 @@ class Dashboard extends CI_Controller {
 		$this->load->view('templates/admin_footer');
 	}
 }
-=======
-}
->>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
+

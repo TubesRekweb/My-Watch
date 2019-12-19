@@ -45,6 +45,8 @@
 							<h5><?= $brg->nama_produk ?></h5>
 							<p>Rp.<?= $brg->harga_produk ?></p>
 							<a href="#" class="site-btn btn-line">ADD TO CART</a>
+							
+							<a href="<?= base_url('detailUser/detail/'); ?><?= $brg->id ?>" class="site-btn btn-line">DETAIL</a>
 						</div>
 					</div>
 

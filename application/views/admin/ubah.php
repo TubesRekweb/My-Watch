@@ -7,11 +7,11 @@
              Form Ubah Data Barang
           </div>
             <div class="card-body">
-<<<<<<< HEAD
+
               <form action="<?= base_url('admin/dashboard/ubah'); ?>" method="post">
-=======
+
               <form action="<?= base_url('admin/Databarang/ubah/'); ?>" method="post">
->>>>>>> 44fdfc828d2ff3c289c6656779c12edf4a0afb7b
+
                 <input type="hidden" name="id" value="<?= $barang['id']; ?>">
 
           <div class="form-group">
