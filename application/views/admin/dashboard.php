@@ -36,8 +36,7 @@
           <div class="card-body">
             <h5 class="card-title mb-1"><?= $brg->nama_produk ?></h5>
             <small><?= $brg->spesifikasi_produk ?></small><br>
-            <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span><br>
-
+            <span class="badge badge-success mb-3">Rp.<?= number_format($brg->harga_produk, 0,',','.') ?></span><br>
             <a href="<?= base_url(); ?>admin/product/detail/<?= $brg->id ?>" class="btn btn-sm btn-success">Detail</a>
 
 

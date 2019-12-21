@@ -53,9 +53,9 @@
 							</div>
 						</figure>
 						<div class="product-info">
-							<h6><?= $wn->nama_produk ;?></h6>
-							<p>$39.90</p>
-							<a href="<?=base_url(); ?>woman/tambah_ke_keranjang/<?= $wm['id'];?>" class="site-btn btn-line">ADD TO CART</a>
+							<h5><?= $wn->nama_produk ?></h5>
+							<p>Rp.<?= number_format($wn->harga_produk, 0,',','.') ?></p>
+							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $wn->id ?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
 					<?php endforeach;?>

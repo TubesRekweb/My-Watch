@@ -41,7 +41,7 @@
 			<td><?= $brg->nama_produk ?></td>
 			<td><?= $brg->spesifikasi_produk ?></td>
 			<td><?= $brg->kategori_produk ?></td>
-			<td><?= $brg->harga_produk ?></td>
+			<td>Rp.<?= number_format($brg->harga_produk, 0,',','.'); ?></td>
 			<td><?= $brg->warna_produk ?></td>
 			<td><?= $brg->stok ?></td>
 

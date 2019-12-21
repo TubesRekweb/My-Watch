@@ -44,7 +44,7 @@
 							<div class="pi-meta">
 								<div class="pi-m-left">
 									<img src="<?=base_url(); ?>assets/img/icons/eye.png" alt="">
-									<p>quick view</p>
+									<p><?= $mn->nama_produk;?></p>
 								</div>
 								<div class="pi-m-right">
 									<img src="<?=base_url(); ?>assets/img/icons/heart.png" alt="">
@@ -53,10 +53,11 @@
 							</div>
 						</figure>
 						<div class="product-info">
-							<h6><?= $mn ->nama_produk ?></h6>
-							<p>$39.90</p>
-							<a href="<?php echo base_url();?>Man/tambah_ke_keranjang/<?= $mn['id'];?>" class="site-btn btn-line">ADD TO CART</a>
+							<h5><?= $mn->nama_produk ?></h5>
+							<p>Rp.<?= number_format($mn->harga_produk, 0,',','.') ?></p>
+							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $mn->id ?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
+					</div>
 					</div>
 					<?php endforeach; ?>
 				</div>

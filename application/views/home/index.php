@@ -43,9 +43,8 @@
 						</figure>
 						<div class="product-info">
 							<h5><?= $brg->nama_produk ?></h5>
-							<p>Rp.<?= $brg->harga_produk ?></p>
-							<a href="#" class="site-btn btn-line">ADD TO CART</a>
-							
+							<p>Rp.<?= number_format($brg->harga_produk, 0,',','.') ?></p>
+							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $brg->id ?>" class="site-btn btn-line">ADD TO CART</a>
 							<a href="<?= base_url('detailUser/detail/'); ?><?= $brg->id ?>" class="site-btn btn-line">DETAIL</a>
 						</div>
 					</div>

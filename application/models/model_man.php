@@ -9,6 +9,11 @@ class model_man extends CI_Model {
 	public function getManById($id){
 		return $this->db->get('laki_laki')->row_array();
 	}
+
+	public function hapusDataBarang($id){
+		$this->db->delete('tb_barang', ['id' => $id]);
+	}
+
 	public function find($id)
 	{
 		$result = $this->db->where('id', $id)

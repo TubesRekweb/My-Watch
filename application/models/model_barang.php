@@ -34,17 +34,17 @@ class Model_barang extends CI_Model {
 		redirect('admin/product');	
 	}
 
-	// public function find($id)
-	// {
-	// 	$result = $this->db->where('id', $id)
-	// 			->limit(1)
-	// 			->get('perempuan');
-	// 	if($result->num_rows() > 0) {
-	// 		return $result->row();
-	// 	} else {
-	// 		return array();
+	public function find($id)
+	{
+		$result = $this->db->where('id', $id)
+				->limit(1)
+				->get('tb_barang');
+		if($result->num_rows() > 0) {
+			return $result->row();
+		} else {
+			return array();
 
-	// 	}
+		}
 		
-	// }
+	}
 }

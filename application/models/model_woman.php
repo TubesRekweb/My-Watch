@@ -1,12 +1,12 @@
 <?php
 
-class Model_women extends CI_Model {
+class Model_woman extends CI_Model {
 
-	public function getAllWomen(){
+	public function getAllWoman(){
 		return $this->db->get('perempuan')->result_array();
 	}
 	
-	public function getWomenById($id){
+	public function getWomanById($id){
 		return $this->db->get('perempuan')->row_array();
 	}
 
