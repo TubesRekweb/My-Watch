@@ -1,6 +1,6 @@
-<div class="container-fluid">
 
-
+  <div class="content-wrapper">
+    <section class="content">
 <!-- carausel dashboard -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -24,6 +24,8 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+      
+<div class="container-fluid">
 
   <!--menampilkan produk barang  -->
   <div class="row text-center mt-3">
@@ -36,7 +38,7 @@
             <small><?= $brg->spesifikasi_produk ?></small><br>
             <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span><br>
 
-            <a href="<?= base_url(); ?>admin/dashboard/detail/<?= $brg->id ?>" class="btn btn-sm btn-success">Detail</a>
+            <a href="<?= base_url(); ?>admin/product/detail/<?= $brg->id ?>" class="btn btn-sm btn-success">Detail</a>
 
 
 

@@ -31,7 +31,7 @@ class Model_barang extends CI_Model {
 		$this->db->where('id', $this->input->post('id'));
 		$this->db->update('tb_barang', $data);
 
-		redirect('admin/databarang');	
+		redirect('admin/product');	
 	}
 
 	// public function find($id)

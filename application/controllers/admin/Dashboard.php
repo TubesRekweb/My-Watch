@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller {
 			$this->load->view('templates/admin_header', $data);
 			$this->load->view('templates/admin_menubar', $data);
 			$this->load->view('admin/dashboard', $data);
-			$this->load->view('templates/admin_footer', $data);
+			$this->load->view('templates/admin_footer');
 	}
 
 	public function proses_pesanan(){
@@ -28,19 +28,6 @@ class Dashboard extends CI_Controller {
 			echo "maaf Pesanan anda gagal diproses";
 		}
 	}
-
-	public function ubah(){
-			$this->model_barang->ubahDataBarang();
-			$this->session->set_flashdata('flash', 'Diubah');
-			redirect('admin/dashboard');		
-	}
-
-	public function detail($id){
-		$data['judul'] = 'Detail Data Barang';
-		$data['barang'] = $this->model_barang->getBarangById($id);
-		$this->load->view('templates/admin_header', $data);
-		$this->load->view('admin/detail', $data);
-		$this->load->view('templates/admin_footer');
-	}
 }
+
 
