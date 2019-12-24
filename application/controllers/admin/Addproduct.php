@@ -30,7 +30,7 @@ class Addproduct extends CI_Controller {
 			// apabila gagal
 			  if(!$this->upload->do_upload('gambar')){
 				 echo "Gambar Gagal di upload !";
-	      	  }else {
+	         	  }else {
 					$gambar =$this->upload->data('file_name');
 				}
 			}

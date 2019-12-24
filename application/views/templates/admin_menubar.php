@@ -223,20 +223,20 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?= base_url('auth'); ?>" class="nav-link">
+                <a href="<?= base_url('admin'); ?>/auth" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Login</p>
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a href="<?= base_url('auth'); ?>/registration" class="nav-link">
+                <a href="<?= base_url('admin'); ?>/auth/registration" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Register</p>
                 </a>
               </li>
                <li class="nav-item">
-                <a href="<?= base_url('auth'); ?>" class="nav-link">
+                <a href="<?= base_url('admin'); ?>/auth/logout" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Logout</p>
                 </a>

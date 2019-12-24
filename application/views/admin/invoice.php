@@ -42,4 +42,8 @@
 		</tr>
 		<?php endforeach; ?>
 	</table>
+
+		</tr>
+		<?php endforeach; ?>
+	</table>
 </div>

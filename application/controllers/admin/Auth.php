@@ -15,7 +15,7 @@ class Auth extends CI_Controller {
 		if($this->form_validation->run() == false){
 			$data['title'] = 'Login Page';
 			$this->load->view('templates/auth_header', $data);
-			$this->load->view('auth/loginuser');
+			$this->load->view('admin/login');
 			$this->load->view('templates/auth_footer');
 		}else{
 			//validasi success
@@ -59,7 +59,7 @@ class Auth extends CI_Controller {
 		}
 	}
 
-	public function registrationuser(){
+	public function registration(){
 		$this->form_validation->set_rules('name', 'Name', 'required|trim');
 
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
@@ -76,7 +76,7 @@ class Auth extends CI_Controller {
 		if($this->form_validation->run() == false){
 			$data['title'] = 'User Registration';
 			$this->load->view('templates/auth_header', $data);
-			$this->load->view('auth/registrationuser');
+			$this->load->view('admin/registration');
 			$this->load->view('templates/auth_footer');
 		}else{
 			$data = [
@@ -84,7 +84,7 @@ class Auth extends CI_Controller {
 				'email' => htmlspecialchars($this->input->post('email', true)),
 				'image' => 'default.jpg',
 				'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-				'role_id' => 1,
+				'role_id' => 2,
 				'is_active' => 1,
 				'date_create' => time()
 			];

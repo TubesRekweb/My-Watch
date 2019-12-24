@@ -47,4 +47,14 @@ class Model_barang extends CI_Model {
 		}
 		
 	}
+
+	public function cariDataBarang(){
+		$keyword = $this->input->post('keyword', true); 
+		$this->db->like('nama_produk', $keyword);
+		$this->db->or_like('spesifikasi_produk', $keyword);
+		$this->db->or_like('kategori_produk', $keyword);
+		$this->db->or_like('harga_produk', $keyword);
+		$this->db->or_like('warna_produk', $keyword);
+		return $this->db->get('tb_barang')->result_array();
+	}
 }

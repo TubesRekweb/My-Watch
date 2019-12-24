@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UserMyWatch | Registration Page</title>
+  <title>AdminMyWatch | Registration Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,7 +50,7 @@
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
-       <form class="user" method="post" action="<?= base_url('auth/registrationuser'); ?>">
+       <form class="user" method="post" action="<?= base_url('admin/auth/registration'); ?>">
         <div class="input-group mb-3">
           <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Full Name" value="<?= set_value('name'); ?>">
                   <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
@@ -115,7 +115,7 @@
         </a>
       </div>
 
-      <a href="<?= base_url('auth'); ?>" class="text-center">I already have a membership</a>
+      <a href="<?= base_url('admin/auth'); ?>" class="text-center">I already have a membership</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

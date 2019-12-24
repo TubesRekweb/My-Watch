@@ -17,6 +17,28 @@
       </div><!-- /.container-fluid -->
     </section>
 
+    <div class="row mt-3">
+    <div class="col-md-6">
+      <form action="" method="post">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Cari data Barang.." name="keyword">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Cari</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-6">
+  <?php if( empty($barang)) : ?>
+        <div class="alert alert-danger" role="alert" >
+          data barang tidak ditemukan.
+        </div>
+      <?php endif; ?>
+    </div>
+  </div>
 
 <div class="container-fluid">
 	<table class="table table-border">

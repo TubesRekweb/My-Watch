@@ -3,7 +3,7 @@
 		<div class="container">
 			<h2>Couple</h2>
 			<div class="site-breadcrumb">
-				<a href="">Home</a> / 
+				<a href="<?= base_url('home'); ?>">Home</a> / 
 				<span>Couple</span>
 			</div>
 			<img src="<?=base_url(); ?>assets/img/categorie-page-top.png" alt="" class="cata-top-pic">

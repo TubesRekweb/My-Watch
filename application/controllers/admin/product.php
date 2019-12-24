@@ -4,6 +4,9 @@ class Product extends CI_Controller {
 	public function index()
 	{
 		$data['barang']= $this->model_barang->tampil_data()->result();		
+		if ($this->input->post('keyword')) {
+			$data['barang'] = $this->model_barang->cariDataBarang();
+		}
 			$this->load->view('templates/admin_header');
 			$this->load->view('templates/admin_menubar');
 			$this->load->view('admin/product', $data);

@@ -2,7 +2,7 @@
 	<div class="page-info-section page-info">
 		<div class="container">
 			<div class="site-breadcrumb">
-				<a href="">Home</a> /
+				<a href="<?= base_url('home'); ?>">Home</a> /
 				<span>Contact</span>
 			</div>
 			<img src="<?=base_url(); ?>assets/img/page-info-art.png" alt="" class="page-info-art">

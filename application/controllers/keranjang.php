@@ -34,8 +34,17 @@ class Keranjang extends CI_Controller
 	 public function detail_keranjang()
     {
     	$this->load->view('templates/header');
+    	$this->load->view('templates/menubar');
         $this->load->view('keranjang/index');
         $this->load->view('templates/footer');
+     
+	}
+	
+	public function hapus_keranjang()
+    {
+		$this->cart->destroy();
+		redirect ('home');
+    	
      
     }
 }
