@@ -19,17 +19,11 @@
 					<div class="col-lg-6">
 						<h4 class="checkout-title">Billing Address</h4>
 						<div class="row">
-							<div class="col-md-6">
-								<input type="text" placeholder="First Name *" name="first_name" class="form-control">
-							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Last Name *" name="last_name" class="form-control">
-							</div>
 							<div class="col-md-12">
-								<input type="text" placeholder="Province" name="province" class="form-control">
-								<input type="text" placeholder="Address *" name="address" class="form-control">
+								<input type="text" placeholder="Full Name *" name="nama" class="form-control">
+								<input type="text" placeholder="Full Address *" name="alamat" class="form-control">
 								<input type="text" placeholder="Zipcode *" name="zipcode" class="form-control">
-								<input type="text" placeholder="Phone no *" name="phone" class="form-control">
+								<input type="text" placeholder="Phone Number *" name="phone_number" class="form-control">
 								<input type="email" placeholder="Email Address *" name="email" class="form-control">
 							</div>
 						</div>

@@ -54,7 +54,7 @@
 			</div>
 			<div class="row cart-buttons">
 				<div class="col-lg-5 col-md-5">
-				<a href="<?= base_url('home'); ?>"><div class="site-btn btn-continue">Continue shooping</a></div>
+				<a href="<?= base_url('home'); ?>"><div class="site-btn btn-continue">Continue shopping</a></div>
 				</div>
 				<div class="col-lg-7 col-md-7 text-lg-right text-left">
 				<a href="<?= base_url('keranjang/hapus_keranjang'); ?>"><div class="site-btn btn-continue"><div class="site-btn btn-line btn-update">Clear Cart</a></div>

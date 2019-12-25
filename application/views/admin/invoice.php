@@ -38,12 +38,11 @@
 			<td><?= $inv->alamat ?></td>
 			<td><?= $inv->tgl_pesan ?></td>
 			<td><?= $inv->batas_bayar ?></td>
-			<td><?= anchor('admin/invoice/detail' .$inv->id, '<div class="btn btn-sm btn-primary">Detail</div>') ?></td>
+			<td><?= anchor('admin/invoice/detail/' .$inv->id, '<div class="btn btn-sm btn-primary">Detail</div>') ?></td>
 		</tr>
 		<?php endforeach; ?>
 	</table>
 
 		</tr>
-		<?php endforeach; ?>
 	</table>
 </div>

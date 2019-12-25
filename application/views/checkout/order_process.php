@@ -15,5 +15,6 @@
 	<div class="alert alert-success">
 		<p class="text-center align-middle">Your order has been successfully processed !!!</p>
 	</div>
+	<a href="<?= base_url('home') ?>" class="btn btn-sm btn-success">Back To Home</a>
 </div>
 
