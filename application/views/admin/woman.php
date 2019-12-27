@@ -86,6 +86,17 @@
         </div>
         <!-- /.row -->
        
+<style>
+  .p-10{
+    padding: 10px;
+  }
+  .card .card-body{
+    display: flex ;
+    flex-direction: column ;
+    color: #333 ; 
+    padding:1.25rem 1.25rem 0 ;
+  }
+</style>
 
 <div class="container-fluid">
 
@@ -93,19 +104,16 @@
   <div class="row text-center mt-3">
     <?php foreach ($woman as $brg) : ?>
       <div class="col-md-3" style="margin-bottom: 20px;">
+      <a href="<?= base_url(); ?>admin/product/detail/<?= $brg->id ?>">
         <div class="card" style="width: 100%;">
           <img src="<?= base_url().'assets/img/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title mb-1"><?= $brg->nama_produk ?></h5>
-            <small><?= $brg->spesifikasi_produk ?></small><br>
-            <span class="badge badge-success mb-3">Rp.<?= $brg->harga_produk ?></span><br>
-
-            <a href="<?= base_url(); ?>admin/dashboard/detail/<?= $brg->id ?>" class="btn btn-sm btn-success">Detail</a>
-
-
-
+            <h5 class="card-title mb-2"><?= $brg->nama_produk ?></h5>
+            <small class="mb-3"><?= $brg->spesifikasi_produk ?></small><br>
+            <span class="badge badge-success p-10">Rp.<?= $brg->harga_produk ?></span><br>
           </div>
       </div>
+      </a>
     </div>
     <?php endforeach; ?>
     

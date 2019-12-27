@@ -42,7 +42,8 @@ class Addproduct extends CI_Controller {
 				'harga_produk'      => $harga_produk,
 				'warna_produk'      => $warna_produk,
 				"stok"              => $stok,
-				"gambar"            => $gambar
+				"gambar"            => $gambar,
+				"date_created"      => time()
 			);
 
 			// menginput tabel barang

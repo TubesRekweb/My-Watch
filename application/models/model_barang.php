@@ -55,6 +55,6 @@ class Model_barang extends CI_Model {
 		$this->db->or_like('kategori_produk', $keyword);
 		$this->db->or_like('harga_produk', $keyword);
 		$this->db->or_like('warna_produk', $keyword);
-		return $this->db->get('tb_barang')->result_array();
+		return $this->db->get('tb_barang')->result();
 	}
 }

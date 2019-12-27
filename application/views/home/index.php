@@ -1,4 +1,11 @@
-	<!-- Hero section -->
+<li class="nav-item">
+                <a href="<?= base_url('auth/logout"'); ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+
+<!-- Hero section -->
 	<section class="hero-section set-bg" data-setbg="<?=base_url('assets/'); ?>img/baground.jpg">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
@@ -25,7 +32,20 @@
 	</section>
 	<!-- Hero section end -->
 
-	
+	<form action="" method="post" class="nav-form"> 
+  					<input class="nav-search" type="search" placeholder="Search" aria-label="Search" name="keyword">
+					<a href="#" class="search" type="submit"><img src="<?=base_url(); ?>assets/img/icons/search.png" alt="">
+					</a>
+				</form>
+			<div class="row mt-3 col-6">
+               <div class="col-md-6">
+                 <?php if( empty($barang)) : ?>
+                  <div class="alert alert-danger text-center" role="alert" >
+                    data barang tidak ditemukan.
+                  </div>
+                <?php endif; ?>
+               </div>
+            </div>
 	<!-- Intro section -->
 	<section class="intro-section spad pb-0">
 		<div class="section-title">
@@ -44,7 +64,7 @@
 						<div class="product-info">
 							<h5><?= $brg->nama_produk ?></h5>
 							<p>Rp.<?= number_format($brg->harga_produk, 0,',','.') ?></p>
-							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $brg->id ?>" class="site-btn btn-line">ADD TO CART</a>
+							<a href="<?= base_url('keranjang/tambah_ke_keranjang/') . $brg->id?>" class="site-btn btn-line">ADD TO CART</a>
 							<a href="<?= base_url('detailUser/detail/'); ?><?= $brg->id ?>" class="site-btn btn-line">DETAIL</a>
 						</div>
 					</div>

@@ -16,11 +16,11 @@
 					 <span>
 					 	<?php echo ($keranjang)?>
 					 </span>
-					
-				<a href="#" class="search"><img src="<?=base_url(); ?>assets/img/icons/search.png" alt="">
 				</a>
-
+				
 			</div>
+			
+			
 			<!-- site menu -->
 			<ul class="main-menu">
 				<li><a href="<?= base_url('home/index');  ?>">Home</a></li>
@@ -32,3 +32,10 @@
 		</div>
 	</header>
 	<!-- Header section end -->
+
+
+<script>
+	$("button").click(function(){
+	$("p:first").addClass("intro");
+	});
+</script>

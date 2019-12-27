@@ -13,18 +13,24 @@ class Model_invoice extends CI_Model{
 			'batas_bayar' => date('Y-m-d H:i:s', mktime(date('H'),date('i'),date('s'),date('m'),date('d') + 1,date('Y'))),
 		);
 	
+		// $this->db->query('SELECT * FROM tb_pesanan JOIN tb_barang ON 
+		// tb_pesanan.id_brg=tb_barang.id WHERE id_brg = ' . $id)->result_array();
 		$this->db->insert('tb_invoice', $invoice);
 		$id_invoice = $this->db->insert_id();
-	
 		foreach($this->cart->contents() as $item){
+			
 			$data = array (
 				'id_invoice' => $id_invoice,
 				'id_brg' => $item['id'],
 				'nama_brg' => $item['name'],
 				'jumlah' => $item['qty'],
 				'harga' => $item['price'],
+
 			);
+			$produk = $this->db->get_where('tb_barang', ['id' => $item['id']])->row_array();
 			$this->db->insert('tb_pesanan', $data);
+			$this->db->update('tb_barang', ['stok' => ($produk ['stok'] - $item['qty'])], 
+			['id' => $item['id']]);
 		}
 		return TRUE;
 	}

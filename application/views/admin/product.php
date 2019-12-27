@@ -18,8 +18,9 @@
     </section>
 
     <div class="row mt-3">
-    <div class="col-md-6">
-      <form action="" method="post">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <form action="" method="post" class="m3">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Cari data Barang.." name="keyword">
         <div class="input-group-append">
@@ -69,21 +70,28 @@
 
 
 			
-
+      <Style>
+        .m-p{
+          margin-bottom: 5px;
+        }
+        .m3{
+          margin-right: 5px;
+        }
+      </Style>
 			<!-- <td><img src="<?= base_url('assets/img/uploads/') ?><?= $brg->gambar  ?>"></td> -->
 			
       <td class="project-actions text-center">
-          <a class="btn btn-info btn-sm" href="<?= base_url(); ?>admin/product/detail/<?= $brg->id ?>">  
+          <a class="btn btn-success btn-sm m-p" href="<?= base_url(); ?>admin/product/detail/<?= $brg->id ?>">  
               <i class="fas fa-folder">
               </i>
               View
           </a>
-          <a class="btn btn-info btn-sm" href="<?= base_url(); ?>admin/product/edit/<?= $brg->id ?>">
+          <a class="btn btn-info btn-sm m-p" href="<?= base_url(); ?>admin/product/edit/<?= $brg->id ?>">
               <i class="fas fa-pencil-alt">
               </i>
               Edit
           </a>
-          <a class="btn btn-danger btn-sm" href="<?= base_url(); ?>admin/product/hapus/<?= $brg->id ?>" onclick="return confirm('yakin akan di hapus ?');">
+          <a class="btn btn-danger btn-sm m-p" href="<?= base_url(); ?>admin/product/hapus/<?= $brg->id ?>" onclick="return confirm('yakin akan di hapus ?');">
               <i class="fas fa-trash">
               </i>
               Delete

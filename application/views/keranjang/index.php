@@ -1,4 +1,4 @@
- <!-- Page Info -->
+<!-- Page Info --> 
 	<div class="page-info-section page-info">
 		<div class="container">
 			<div class="site-breadcrumb">
@@ -21,7 +21,9 @@
 							<th class="product-th">Product</th>
 							<th>Price</th>
 							<th>Quantity</th>
+							<th>Detail</th>
 							<th class="total-th">Subtotal</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -29,10 +31,9 @@
 			            foreach ($this->cart->contents() as $items) : ?>
 						<tr>
 							<td class="product-col">
-								<img src="">
+								<img src="<?= base_url('assets/')?>img/uploads/<?=$items['gambar']; ?>">
 								<div class="pc-title">
 									<h4><?= $items['name'] ?></h4>
-
 								</div>
 							</td>
 							<td class="price-col"><?= number_format($items['price'], 0,',','.')  ?></td>
@@ -42,11 +43,22 @@
 									<input type="number" value="<?= $items['qty'] ?>" >
 								</div>
 							</td>
-							<td class="total-col">Rp. <?= number_format($items['subtotal'], 0,',','.')  ?></td>
+							<td class="text-center"><a href="<?= base_url('detailUser'); ?>/detail/<?=$items['id']; ?>">
+								<div class="btn btn-primary btn-sm material-tooltip-main text-center">
+									<span class="fa fa-eye" title="detail"></span>
+								</div></a>
+							</td>
+							<td class="total-col">Rp. <?= number_format($items['subtotal'], 0,',','.')  ?>
+							</td>
+							<td class="text-center"><a href="<?= base_url('keranjang/'); ?>hapus_keranjang/<?=$items['id']; ?>">
+								<div class="btn btn-danger btn-sm material-tooltip-main text-center">
+									<span class="fa fa-trash" title="delete"></span>
+								</div></a>
+							</td>
 						</tr>
 						<?php endforeach; ?>
 						<tr>
-			               <td colspan="3"=></td>
+			               <td colspan="4"=></td>
 				           <td align="right">Rp. <?= number_format($this->cart->total(), 0,',','.') ?> </td>
 			            </tr>
 					</tbody>
@@ -54,10 +66,14 @@
 			</div>
 			<div class="row cart-buttons">
 				<div class="col-lg-5 col-md-5">
-				<a href="<?= base_url('home'); ?>"><div class="site-btn btn-continue">Continue shopping</a></div>
+					<a href="<?= base_url('home'); ?>">
+						<div class="site-btn btn-line btn-continue">Continue shooping</div>
+					</a>
 				</div>
 				<div class="col-lg-7 col-md-7 text-lg-right text-left">
-				<a href="<?= base_url('keranjang/hapus_keranjang'); ?>"><div class="site-btn btn-continue"><div class="site-btn btn-line btn-update">Clear Cart</a></div>
+					<a href="<?= base_url('keranjang/hapus_keranjang'); ?>">
+						<div class="site-btn btn-line btn-update">Clear Cart</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -71,11 +87,11 @@
 							<div class="shipping-chooes">
 								<div class="sc-item">
 									<input type="radio" name="sc" id="one">
-									<label for="one">Next day delivery<span>$4.99</span></label>
+									<label for="one">Next day delivery<span>Rp.11.000</span></label>
 								</div>
 								<div class="sc-item">
 									<input type="radio" name="sc" id="two">
-									<label for="two">Standard delivery<span>$1.99</span></label>
+									<label for="two">Standard delivery<span>Rp.7.000</span></label>
 								</div>
 								<div class="sc-item">
 									<input type="radio" name="sc" id="three">
@@ -115,7 +131,9 @@
 					}
 					  ?>
 							</ul>
+							
 							<a class="site-btn btn-full" href="<?= base_url('checkout'); ?>">Proceed to checkout</a>
+							
 						</div>
 					</div>
 				</div>
@@ -123,4 +141,3 @@
 		</div>
 	</div>
 	<!-- Page end -->
-

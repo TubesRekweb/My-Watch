@@ -36,8 +36,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
 					<?php foreach ($couple as $cp) : ?>
+				<div class="col-lg-3">
 					<div class="product-item">
 						<figure>
 							<img src="<?= base_url().'assets/img/uploads/'.$cp->gambar ?>" alt="">
@@ -58,7 +58,7 @@
 							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $cp->id ?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
-					</div>
+				</div>
 					<?php endforeach; ?>
 				</div>
 			

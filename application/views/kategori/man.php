@@ -36,8 +36,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
 					<?php foreach ($man as $mn) : ?>
+				<div class="col-lg-3">
 					<div class="product-item">
 						<figure>
 							<img src="<?= base_url().'assets/img/uploads/'.$mn->gambar ?>" alt="">
@@ -58,9 +58,9 @@
 							<a href="<?= base_url('keranjang/tambah_ke_keranjang/'); ?><?= $mn->id ?>" class="site-btn btn-line">ADD TO CART</a>
 						</div>
 					</div>
-					</div>
-					<?php endforeach; ?>
 				</div>
+					<?php endforeach; ?>
+			</div>
 			
 			</div>
 			<div class="site-pagination">

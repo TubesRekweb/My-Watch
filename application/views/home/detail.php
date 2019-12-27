@@ -11,7 +11,13 @@
     			 <p class="card-text">Rp.<?= number_format($barang['harga_produk'], 0,',','.'); ?></p>
     			 <p class="card-text"><?= $barang['warna_produk']; ?></p>
     			 <p class="card-text"><?= $barang['stok']; ?></p>
-           <p class="card-text"><?= $barang['kategori_produk']; ?></p>
+		   <p class="card-text"><?= $barang['kategori_produk']; ?></p>
+		   <form method="post" action="<?= base_url('keranjang/tambah_ke_keranjang/') . $barang ['id'] ?>">
+				<input id="qty" name="qty" type="number">
+				<button type="submit">
+					Tambah ke keranjang
+				</button>
+			</form>
     			 <a href="<?= base_url(); ?>home/index/" class="btn btn-primary">Kembali</a>
  				 </div>
 			</div>
