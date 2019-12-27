@@ -17,16 +17,9 @@
 					 	<?php echo ($keranjang)?>
 					 </span>
 				</a>
-	<a href="<?= base_url('/auth');  ?>" class="card-user ml-3">
-	<div class="fa fa-user"></div>
+	<a href="<?= base_url('/auth/logout');  ?>" class="card-user ml-3">
+	<div class="fa fa-sign"></div>
 </a>
-
-
-
-
-
-
-
 
 			</div>
 			

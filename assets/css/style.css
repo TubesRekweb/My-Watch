@@ -292,12 +292,16 @@ ol {
 }
 .nav-form .nav-search {
 	margin-left: 10px;
-	background-color: #ffffff;
+	background-color: #d797e8;
     border: none;
     padding: 5px 13px;
     border-radius: 23px;
 }
-
+.iniaja input::placeholder { color: white; }
+.iniaja input {
+	color: white;
+	margin-top: 20px;
+}
 .nav-form .search {
 	margin-top: -10px;
 	margin-right: 13px;
@@ -310,6 +314,12 @@ ol {
 }
 
 .card-user .fa-user{
+	color: #ffffff;
+	margin-top: 5px;
+	font-size: 25px;
+}
+
+.card-user .fa-sign-out{
 	color: #ffffff;
 	margin-top: 5px;
 	font-size: 25px;
